@@ -102,9 +102,9 @@ a:focus {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           flex-flow: row wrap;
-      -webkit-box-pack: right;
-          -ms-flex-pack: right;
-              justify-content: right;
+  -webkit-box-pack: flex-end;
+      -ms-flex-pack: flex-end;
+  justify-content: flex-end;
   margin: 0 12px;
 }
 
