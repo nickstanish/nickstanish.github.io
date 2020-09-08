@@ -15,6 +15,12 @@ body {
   background-color: #efefef;
   font-size: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+body * {
+  box-sizing: inherit;
 }
 
 #navbar {
@@ -26,10 +32,21 @@ body {
   text-align: center;
 }
 
-#wrapper {
+.text-smaller {
+  font-size: 0.8em;
+}
+
+main {
   min-height: 100%;
   width: 100%;
-  max-width: 1200px;
+}
+
+.vh {
+  display: none;
+}
+
+.container {
+  max-width: 800px;
   margin: auto;
 }
 
@@ -44,32 +61,6 @@ a:active {
 a:hover,
 a:focus {
   color: #289ccb;
-}
-
-.card-image {
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-}
-
-.card-description {
-  padding: 15px;
-  color: #4d4d4d;
-}
-
-.card-description header {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
-}
-
-.item {
-  -webkit-box-shadow: 0 7px 14px -6px #474856;
-          box-shadow: 0 7px 14px -6px #474856;
-  background-color: #fff;
-}
-
-.card-description {
-  color: #3a3a3a;
 }
 
 .title-name {
@@ -121,19 +112,6 @@ a:focus {
           justify-content: center;
 }
 
-.item {
-  min-height: 250px;
-  margin: 15px;
-  padding: 0px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-          flex: 1 1 auto;
-  min-width: 250px;
-  max-width: 250px;
-  width: 250px;
-}
-
 .link {
   margin: 8px 4px;
   -webkit-box-flex: 0;
@@ -162,16 +140,26 @@ a:focus {
   transform: scale(1.1);
 }
 
-@media only screen and (max-width : 768px) {
-  .item {
-    max-width: 100%;
-    width: 100%;
-  }
+article {
+  margin: 32px 4px;
+  box-shadow: 1px 3px 6px rgba(0,0,0,0.4);
+  padding: 22px;
 }
 
-@media only screen and (max-width : 480px) {
-  .item {
-    max-width: 100%;
-    width: 100%;
+#header p {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+
+footer {
+  margin: 8px 0;
+  font-size: 0.6em;
+}
+
+@media only screen and (max-width : 800px) {
+  .container {
+    max-width: 100vw;
+    margin: auto;
   }
 }
