@@ -143,6 +143,7 @@ a:focus {
 article {
   margin: 32px 4px;
   box-shadow: 1px 3px 6px rgba(0,0,0,0.4);
+  background-color: #ffffff;
   padding: 22px;
 }
 
