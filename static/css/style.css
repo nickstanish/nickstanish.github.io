@@ -142,7 +142,7 @@ a:focus {
 
 article {
   margin: 32px 4px;
-  box-shadow: 1px 3px 6px rgba(0,0,0,0.4);
+  box-shadow: 1px 3px 6px rgba(0,0,0,0.4), 3px 9px 16px rgba(143,187,226,0.15);
   background-color: #ffffff;
   padding: 22px;
 }
@@ -156,6 +156,12 @@ article {
 footer {
   margin: 8px 0;
   font-size: 0.6em;
+}
+
+.id-anchor {
+  font-size: 0.7em;
+  vertical-align: baseline;
+  margin: 0 0.3em;
 }
 
 @media only screen and (max-width : 800px) {
